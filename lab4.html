@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <script>
+        function big_image(){
+            document.getElementById("image").style.width="350px";
+        }
+
+        function small_img(){
+            document.getElementById("image").style.width="175px";
+        }
+
+        function big_p(){
+            document.getElementById("pp").style.fontSize="40px";
+        }
+
+        function small_p(){
+            document.getElementById("pp").style.fontSize="10px";
+        }
+        function detail(){
+            alert("Name: Aditya Tripathi");
+            alert("Registration Number: 202000457");
+        }
+    </script>
+
+    <body>
+        <div class="top-section">
+            <div class="heading"><br>
+                <h1> ASSIGNMENT</h1>
+            </div>
+        </div>
+        
+        <div class="page_content">
+            <div class="middle-area">
+                <p>Click to get Details !!</p>
+                <button id="details" onclick="detail()">Click Me!!</button>
+               
+                <p id="pp"onmouseover="big_p()" onmouseout="small_p()" >SCOUTOP aka TANMAY</p>
+                <img src="scout.jpg" alt="SCOUTOPpq 3ig" id="image" style="width:200px;height:auto;" onmouseover="big_image()" onmouseout="small_img()">    
+            </div>
+            <div class="footer">
+            <div class="details">
+                aditya_202000457@smit.smu.edu.in
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
